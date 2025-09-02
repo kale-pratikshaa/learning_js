@@ -7,7 +7,38 @@
 </head>
 <body>
     <script>
-        var name="prtz";
+        // global scope
+            var x=101;
+            var y=102;
+            var z=103;
+ document.write("<br>");
+        function scopeex()
+            {
+                var x=1;//function scope
+                let y=2;//block scope
+                const z=3;//block scope
+                if(true)//inside this block
+            {
+                var x=10;//reassign x(function scoped)
+                let y=20;//y only for this block
+                const z=30;//z only for this block
+                document.write(x);
+                 document.write(y);
+                  document.write(z);
+                   document.write("<br>");//10 20 30
+            }//outside 
+             document.write(x);
+             document.write(y);
+             document.write(z);
+             document.write("<br>");//10 2 3
+        }
+        //call function
+          scopeex();
+        document.write(x);
+        document.write(y);
+        document.write(z);
+        document.write("<br>");
+   
         
     </script>
 </body>

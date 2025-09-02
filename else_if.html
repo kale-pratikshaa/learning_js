@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else if</title>
+</head>
+<body>
+    <script>
+     var a=prompt("enter a marks:");
+    //  a=parseInt(a);//without parsent use ksta he answer yet && Number use kel tri pn yet
+       a=Number(a);
+        if(a>=80&&a<=100){
+        document.write("you are in destination");
+        }
+    else if(a>=60 && a<=80)
+    {
+        document.write("first class");
+    
+    }
+    else if(a>=35 && a<60)
+    {
+        document.write("second class");
+
+    }
+    else{
+        document.write("fail");
+    }
+    </script>
+    <script>
+        var month=prompt("enter a month:");
+        month=parseInt(month);
+        if(month==1||month==3||month==5||month==7||month==10||month==12)
+    {
+        document.write("number days in 31");
+    }
+    else if(month==4||month==6||month==8||month==11)
+    {
+        document.write("numbers days in 30");
+    }else if(month==2)
+    {
+      document.write("numbers days in 28");
+    }
+    
+    </script>
+</body>
+</html>
